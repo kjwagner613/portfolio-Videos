@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>FX-Upfront</title>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>FX UpFront circa 2015</h1>
+
+      <video
+        controls
+        preload="metadata"
+        playsinline
+        poster="assets/poster.jpg"
+      >
+        <source src="https://dl.dropboxusercontent.com/scl/fi/bgrmq0dn6uoiigakyfg57/FXUpfront.mp4?rlkey=9dn9htglg0e0iezraieya9g6m&st=1k7v0gzs&dl=0" type="video/mp4" />
+        Sorry — your browser can’t play this video.
+      </video>
+
+      <div class="meta">
+        <span>MP4 • Click Slate to Play</span>
+
+      </div>
+    </main>
+  </body>
+</html>
