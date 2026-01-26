@@ -24,26 +24,25 @@
                         <img id="logo" src="images/me.png" alt="Kevin W Initials" width="200">
                     </div>
                     <div class="rightgrid">
-                        <!-- <h1 style="margin-left: 30%; transform: translateX(-80%); transform: translateY(60%);">Editorial Portfolio</h1> -->
-                             <h1 style="position: absolute; top: 15vh; left: 24vw;">Editorial Portfolio</h1>
+                        <h1>Editorial Career - Portfolio</h1>
 
 
-                        <p style="position: absolute; top: 22vh; left: 24vw; text-align: left;">Promotions, visual effects, editing, finish editing,<br> audio sweetening.</p>
-                        <h2 style="position: absolute; top: 30vh; left: 34vw;">2000 - 2015</h2>
+                        <p>Promotions, visual effects, editing, finish editing, audio sweetening.</p>
+                        <h2 class="tmargin">2000 - 2015</h2>
 
                     </div>
                 </div>
             </div>
 
 
-            <!-- <div class="midgrid">
-                <div class="leftgrid center-items"> -->
-                    <!-- <h3>Marketing</h3>
+            <div class="midgrid">
+                <div class="leftgrid center-items">
+                    <h3>Marketing</h3>
                     <h3>&</h3>
-                    <h3>Promotions</h3> -->
+                    <h3>Promotions</h3>
 
-                <!-- </div> -->
-                <div style="position: absolute; top: 7vh; left: 07vw;" class="centergrid">
+                </div>
+                <div class="centergrid">
                     <ol>
                         <p>Promos</p>
                         <!-- <li><a href="https://dl.dropboxusercontent.com/scl/fi/2raw6jqg7jtcvnxop0m4b/FN_DriveThru_30_V5.mp4?rlkey=n4muq62vqs8ztbytw9o5yxf9p&st=vxca18ue&dl=0">DriveThru</a></li> -->
@@ -71,7 +70,7 @@
             </div>
         </div>
         </div>
-    <!-- </div> -->
+    </div>
 </body>
 
 </html>
