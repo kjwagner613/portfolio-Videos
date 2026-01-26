@@ -12,6 +12,15 @@
   --max-width: 860px;
 }
 
+  .wrap {
+    display: flex;
+      flex-direction: column;
+      margin: 0 auto;   
+      width: min(960px, 92vw);
+      padding: 24px;
+  }
+
+
 /* 
   body {
       margin: 0;
@@ -23,10 +32,6 @@
       font-family: var(--font-main);
   }
 
-  .wrap {
-      width: min(960px, 92vw);
-      padding: 24px;
-  }
 
   h1 {
       margin: 0 0 12px 0;
@@ -124,11 +129,14 @@ h3 {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+  justify-content: center;
   
 
 }
 
 .style-grid {
+  display: flex;
+  flex-direction: column;;
 border: 2px solid grey;
 padding: 5px;
 border-radius: 15px;
@@ -197,8 +205,8 @@ li {
   align-items: start;
   justify-content: center;
 }
-#pork-chop {
-  transform: scale(1.5);
+#port-chop {
+  transform(scale:1.5)
 
 }
 .rightgrid {
