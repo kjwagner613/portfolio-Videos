@@ -130,6 +130,7 @@ h3 {
   background-size: cover;
   position: relative;
   justify-content: center;
+  align-items: center;
   
 
 }
@@ -141,8 +142,16 @@ border: 2px solid grey;
 padding: 5px;
 border-radius: 15px;
 
+}
 
-
+.small-video {
+  width: 320px;        /* desired target width */
+  max-width: 100%;     /* responsive fallback */
+  height: auto;        /* preserve aspect ratio */
+  display: block;
+  border-radius: 8px;  /* optional */
+  object-fit: contain; /* prevent cropping */
+  pointer-events: none;/* allow clicks through if overlaying */
 }
 
 
