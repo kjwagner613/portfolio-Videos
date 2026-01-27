@@ -108,18 +108,20 @@ html, body {
 
 .screen {
   position: absolute;
-  top: 25%;
+  top: clamp(170px, 18vh, 250px);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  z-index: 10;
 
   width: min(600px, 92vw);
-  height: min(360px, 48vh);   /* ✅ gives you a real box to work inside */
+  height: clamp(280px, 42vh, 360px);
   box-sizing: border-box;
 
   padding: 8px 5px 52px;    /* ✅ bottom padding reserves space for nameblock */
   color: #111;
 }
+
 
  .screen h1 {
    font-size: 1.8rem;
@@ -550,7 +552,7 @@ html, body {
  .curtains {
    position: absolute;
    inset: 0;
-   z-index: 10;
+   z-index: 50;
    pointer-events: none;
  }
 
