@@ -1,4 +1,10 @@
- :root {
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+:root {
    color-scheme: dark;
 
    --font-main: "Montserrat", serif;
