@@ -77,7 +77,10 @@
 
     }
 
-
+    .videosize {
+      width: 900px;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -91,12 +94,23 @@
     <main class="wrap">
       <div class="structure-grid">
         <div class="video-container">
-          <video controls autoplay muted preload="metadata" playsinline poster="assets/poster.jpg">
+          <video id="myVideo" class="videosize" controls autoplay muted preload="metadata" playsinline
+            poster="assets/poster.jpg">
             <source
               src="https://dl.dropboxusercontent.com/scl/fi/he9lj0gi2w70wzor9c2ui/HUMAN_TEASE_COMPASSION_V6.mov?rlkey=ub784aq2gk0zvp1k4w7jg62n7&st=mpevlked&dl=0" />
             Sorry — your browser can’t play this video.
           </video>
+          <script>
+            const video = document.getElementById('myVideo');
 
+            // Set volume to 15% (0.15)
+            video.volume = 0.15;
+
+            // Pause immediately after load
+            video.addEventListener('loadedmetadata', () => {
+              video.pause();
+            });
+          </script>
           <a href="../index.html">Click to go back to main menu.</a>
 
         </div>

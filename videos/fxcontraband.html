@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="style.css">
   <title>FX Contraband</title>
-  
+
   <style>
     body {
       margin: 0;
@@ -76,11 +76,17 @@
 
 
     }
+
+    .videosize {
+      width: 900px;
+      height: auto;
+    }
   </style>
 </head>
 
 
 <html>
+
 <body>
   <div class="page-container">
     <h1>FX Network</h1>
@@ -88,12 +94,26 @@
     <main class="wrap">
       <div class="structure-grid">
         <div class="video-container">
-          <video controls autoplay muted preload="metadata" playsinline poster="assets/poster.jpg">
+          <video id="myVideo" class="videosize" controls autoplay muted preload="metadata" playsinline
+            poster="assets/poster.jpg">
             <source
               src="https://dl.dropboxusercontent.com/scl/fi/884omyn9lt46tehvvog0l/FX_CONTRABAND_30_V7.mov?rlkey=s0ep935cjhqslcd6g1z5x2tk5&st=oyjhxpdh&dl=0" />
             Sorry — your browser can’t play this video.
           </video>
-          
+
+          <script>
+            const video = document.getElementById('myVideo');
+
+            // Set volume to 15% (0.15)
+            video.volume = 0.15;
+
+            // Pause immediately after load
+            video.addEventListener('loadedmetadata', () => {
+              video.pause();
+            });
+          </script>
+
+
           <a href="../index.html">Click to go back to main menu.</a>
 
         </div>
@@ -103,7 +123,7 @@
           <h3> Technology Used:</h3>
           <ul>
             <li>Avid Media Composer (Offline)</li>
-            
+
           </ul>
         </div>
       </div>
@@ -113,4 +133,5 @@
   </div>
 
 </body>
+
 </html>

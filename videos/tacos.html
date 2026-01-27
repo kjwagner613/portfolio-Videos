@@ -94,12 +94,22 @@
     <main class="wrap">
       <div class="structure-grid">
         <div class="video-container">
-          <video class="videosize" controls autoplay muted preload="metadata" playsinline poster="assets/poster.jpg">
+          <video id="myVideo" class="videosize" controls autoplay muted preload="metadata" playsinline poster="assets/poster.jpg">
             <source
               src="https://dl.dropboxusercontent.com/scl/fi/zlm9h3y2painszghthuw3/Tacos.m4v?rlkey=frwsvwmw12h138f3qgqcdm312&st=ihljdl22&dl=0" />
             Sorry — your browser can’t play this video.
           </video>
-          
+          <script>
+              const video = document.getElementById('myVideo');
+
+              // Set volume to 15% (0.15)
+              video.volume = 0.15;
+
+              // Pause immediately after load
+              video.addEventListener('loadedmetadata', () => {
+                video.pause();
+              });
+            </script>
           <a href="../index.html">Click to go back to main menu.</a>
 
         </div>
