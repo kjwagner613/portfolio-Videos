@@ -65,7 +65,36 @@
       padding-right: 30px;
       padding-left: 30px;
       border-radius: 12px;
-      ;
+
+    }
+
+    body>div>main>div>div.nameblock>div.namecard>a {
+      color: rgb(81, 143, 172);
+      font-size: 1.3rem;
+      text-indent: 20px;
+
+    }
+
+    .nameblock {
+      position: absolute;
+      left: 110px;
+      right: 22px;
+      bottom: 35px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #111;
+      width: 50vw;
+    }
+
+    .namecard,
+    .emailcard {
+      white-space: nowrap;
 
     }
 
@@ -73,8 +102,6 @@
       display: grid;
       grid-template-columns: 60% 40%;
       grid-template-rows: auto;
-
-
     }
 
     .videosize {
@@ -95,7 +122,8 @@
       <main class="wrap">
         <div class="structure-grid">
           <div class="video-container">
-            <video id="myVideo" class="videosize" controls autoplay muted preload="metadata" playsinline poster="assets/poster.jpg">
+            <video id="myVideo" class="videosize" controls autoplay muted preload="metadata" playsinline
+              poster="assets/poster.jpg">
               <source
                 src="https://dl.dropboxusercontent.com/scl/fi/fuiscgyo3c727f4ib4v7n/PorkChop.m4v?rlkey=6spmwsp9e7qkzxdc3zzni8d7p&st=6medp3qe&dl=0" />
               Sorry — your browser can’t play this video.
@@ -112,7 +140,7 @@
               });
             </script>
 
-            <a href="../index.html">Click to go back to main menu.</a>
+
 
           </div>
 
@@ -124,6 +152,15 @@
 
             </ul>
           </div>
+          <div class="nameblock">
+            <div class="namecard">
+              <a href="../index.html">Click to go back to main menu.</a>
+            </div>
+            <div class="emailcard">
+              <p style="color: rgb(173, 151, 151); font-size: 1.4rem;">Don't forget to turn up the volume.</p>
+            </div>
+          </div>
+
         </div>
 
 
