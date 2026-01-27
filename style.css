@@ -37,6 +37,32 @@
     --stageleft-fontcolor: #bdbab6;
   }
 
+  .herogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+    align-items: center;
+    margin-top: -5%;
+    margin-bottom: auto;
+    margin-left: -12%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    line-height: 1.2;
+    font-size: .8rem;
+    color: black;
+  }
+
+  .herocard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+
+
+  }
+
+
 
   body {
     padding-bottom: 50px;
@@ -547,3 +573,38 @@
   transform: translateX(100%);
 }
 
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(1) > a{
+color: black;
+}
+
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(2) > a{
+color: black;
+}
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(3) > a{
+color: black;
+}
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(4) > a{
+color: black;
+}
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(5) > a{
+color: black;
+}
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(6) > a{
+color: black;
+}
+body > div > div.screen > div > div:nth-child(1) > ul > li:nth-child(1) > a{
+color: black;
+}
+
+body > div > div.screen > div > div:nth-child(2) > ul > li:nth-child(2) > a {
+color: black;
+
+}
+
+body > div > div.screen > div > div:nth-child(2) > ul > li:nth-child(4) > a {
+  color: black;
+}
+
+body > div > div.screen > div > div:nth-child(2) > ul > li:nth-child(5) > a {
+  color: black;
+}
