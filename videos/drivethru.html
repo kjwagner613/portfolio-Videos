@@ -108,6 +108,13 @@
       width: 900px;
       height: auto;
     }
+
+    video {
+      width: 480px;
+      height: auto;
+      background: #000;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -138,9 +145,25 @@
               video.addEventListener('loadedmetadata', () => {
                 video.pause();
               });
+              video.addEventListener('click', () => {
+                try {
+                  if (video.paused) {
+                    // Play and unmute
+                    video.muted = false;
+                    video.play().catch(err => {
+                      console.error("Playback failed:", err);
+                    });
+                  } else {
+                    // Pause video
+                    video.pause();
+                  }
+                } catch (err) {
+                  console.error("Error handling video click:", err);
+                }
+              });
             </script>
 
-        
+
 
           </div>
 

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>FX Upfront</title>
 
+
   <style>
     body {
       margin: 0;
@@ -126,17 +127,34 @@
               src="https://dl.dropboxusercontent.com/scl/fi/bgrmq0dn6uoiigakyfg57/FXUpfront.mp4?rlkey=9dn9htglg0e0iezraieya9g6m&st=1k7v0gzs&dl=0" />
             Sorry — your browser can’t play this video.
           </video>
-          <script>
-            const video = document.getElementById('myVideo');
+   <script>
+              const video = document.getElementById('myVideo');
 
-            // Set volume to 15% (0.15)
-            video.volume = 0.15;
+              // Set volume to 15% (0.15)
+              video.volume = 0.15;
 
-            // Pause immediately after load
-            video.addEventListener('loadedmetadata', () => {
-              video.pause();
-            });
-          </script>
+              // Pause immediately after load
+              video.addEventListener('loadedmetadata', () => {
+                video.pause();
+              });
+              video.addEventListener('click', () => {
+                try {
+                  if (video.paused) {
+                    // Play and unmute
+                    video.muted = false;
+                    video.play().catch(err => {
+                      console.error("Playback failed:", err);
+                    });
+                  } else {
+                    // Pause video
+                    video.pause();
+                  }
+                } catch (err) {
+                  console.error("Error handling video click:", err);
+                }
+              });
+            </script>
+
 
         </div>
         <div class="nameblock">
@@ -164,5 +182,5 @@
     </div> -->
     </main>
   </div>
-
+<script src="../script.js"></script>
 </body>
