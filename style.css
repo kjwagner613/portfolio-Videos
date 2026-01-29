@@ -33,7 +33,7 @@
 .menu-title {
   font-size: 2.5rem;
   color: rgb(150, 39, 39);
-  margin-top: -80px;
+  margin-top: -50px;
   margin-bottom: 0;
 }
 
@@ -41,7 +41,7 @@
   font-size: 1.5rem;
   color: rgb(80, 55, 39);
   margin-top: -10px;
-  margin-bottom: 20px;
+  margin-bottom: -15px;
   font-weight: normal;
 }
 
@@ -71,6 +71,42 @@
 
 }
 
+.curtains {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right,
+      #2a0f08,
+      #4a1c12,
+      #2a0f08);
+  transition: transform 1.6s ease-in-out;
+}
+
+.curtain.left {
+  left: 0;
+  transform: translateX(0);
+}
+
+.curtain.right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.theater.open .curtain.left {
+  transform: translateX(-100%);
+}
+
+.theater.open .curtain.right {
+  transform: translateX(100%);
+}
 
 ul {
   list-style: none;
