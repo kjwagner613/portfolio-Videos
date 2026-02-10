@@ -276,3 +276,74 @@ body {
   background: rgba(255, 255, 255, 0.12);
   transform: translateY(-2px);
 }
+
+@media (max-width: 900px) {
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #000;
+    color: #fff;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65),
+        rgba(255, 249, 239, 0) 45%),
+      linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+.overlay {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 40px 16px;
+  
+  position: relative;
+  z-index: 2;
+}
+
+.menu-title {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  color: rgb(150, 39, 39);
+  margin: 0;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: rgb(80, 55, 39);
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.menu-plate {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: clamp(5px, 2px, 2px);
+  padding-left: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  /* flex: 1; */
+  display: flex;
+  /* max-width: 700px; */
+  width: 75vw;
+  height: 45vh;
+  box-sizing: border-box;
+  
+  justify-content: center;
+}
+
+.column-container {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  padding-top: 4vh
+}
+
+}
