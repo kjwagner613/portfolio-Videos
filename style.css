@@ -75,7 +75,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   padding: 40px 16px;
-  transform: translateY(-150px);
+  margin-top: -15vh;
   position: relative;
   z-index: 2;
 }
@@ -84,6 +84,7 @@ body {
   font-size: clamp(1.8rem, 5vw, 2.4rem);
   color: rgb(150, 39, 39);
   margin: 0;
+  margin-bottom: -10px;
   text-align: center;
 }
 
@@ -91,21 +92,22 @@ body {
   font-size: clamp(0.9rem, 3vw, 1.2rem);
   color: rgb(80, 55, 39);
   margin: 0;
+  margin-top: -10px;
   font-weight: normal;
   text-align: center;
 }
 
 .menu-plate {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: clamp(5px, 2px, 2px);
+  padding: clamp(.5vw, 1vw, 3vw);
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   /* flex: 1; */
   display: flex;
   /* max-width: 700px; */
-  width: 45vw;
-  height: 25vh;
+  width: clamp(45vw, 10vw, 40vw);
+  height: 30vh;
   box-sizing: border-box;
   align-content: center;
   justify-content: center;
@@ -277,7 +279,7 @@ body {
   transform: translateY(-2px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 890px) {
   body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -300,7 +302,7 @@ body {
   align-items: center;
   gap: 1.5rem;
   padding: 40px 16px;
-  
+  margin-top: -20vh;
   position: relative;
   z-index: 2;
 }
