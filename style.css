@@ -106,8 +106,8 @@ body {
   /* flex: 1; */
   display: flex;
   /* max-width: 700px; */
-  width: clamp(45vw, 10vw, 40vw);
-  height: 30vh;
+  width: clamp(37vw, 10vw, 35vw);
+  height: 27vh;
   box-sizing: border-box;
   align-content: center;
   justify-content: center;
