@@ -118,7 +118,6 @@
         const contactBtn = document.getElementById("contactBtn");
         const backBtn = document.getElementById("backToScreening");
         const credits = document.getElementById("credits");
-        const creditsGrid = document.getElementById("creditsGrid");
         const screening = document.getElementById("screening");
 
         if (!contactBtn || !backBtn || !credits || !screening) return;
@@ -126,39 +125,41 @@
         const CLOSE_DELAY_MS = 1200;
         const OPEN_DELAY_MS = 200;
         let isTransitioning = false;
+        let isOnCredits = false;
 
-        const closeThenGo = (targetEl) => {
+        const closeThenGo = (targetEl, nextOnCredits) => {
           if (isTransitioning) return;
           isTransitioning = true;
           screening.classList.add("closed");
 
           setTimeout(() => {
-            targetEl.scrollIntoView({ behavior: "auto", block: "start" });
+            const top = targetEl.offsetTop;
+            window.scrollTo({ top, behavior: "auto" });
             setTimeout(() => {
               screening.classList.remove("closed");
               isTransitioning = false;
+              if (typeof nextOnCredits === "boolean") {
+                isOnCredits = nextOnCredits;
+              }
             }, OPEN_DELAY_MS);
           }, CLOSE_DELAY_MS);
         };
 
         contactBtn.addEventListener("click", () => {
-          const screeningRect = screening.getBoundingClientRect();
-          const isOnScreening = screeningRect.top >= -50 && screeningRect.top <= 50;
-          
-          if (isOnScreening) {
-            closeThenGo(creditsGrid || credits);
+          if (isOnCredits) {
+            closeThenGo(screening, false);
           } else {
-            closeThenGo(screening);
+            closeThenGo(credits, true);
           }
         });
 
         backBtn.addEventListener("click", () => {
-          closeThenGo(screening);
+          closeThenGo(screening, false);
         });
 
         document.addEventListener("keydown", (e) => {
           if (e.key === "Escape") {
-            closeThenGo(screening);
+            closeThenGo(screening, false);
           }
         });
       })();
