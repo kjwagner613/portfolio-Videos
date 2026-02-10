@@ -7,9 +7,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background: #000;
   color: #fff;
-  background: radial-gradient(circle at 20% 20%, rgba(255, 249, 239, 0.65),    
+  background: radial-gradient(circle at 20% 20%, rgba(26, 6, 99, 0.65),    
   rgba(255, 249, 239, 0) 45%),
-  linear-gradient(160deg, #3b4653 0%, #7f8a94 48%, #e3ddd4 100%);
+  linear-gradient(160deg, #533b45 0%, #1874ca 48%, #4b494580 100%);
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: 100% 100%;
@@ -88,7 +88,7 @@ body {
 
 .subtitle {
   font-size: clamp(0.9rem, 3vw, 1.2rem);
-  color: rgb(80, 55, 39);
+  color: rgb(209, 197, 190);
   margin: 0;
   font-weight: normal;
   text-align: center;
